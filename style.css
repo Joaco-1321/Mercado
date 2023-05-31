@@ -1,0 +1,190 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+/* reglas generales */
+.contenedor {
+    display: flex;
+}
+
+.contenedor-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url(./img/fondoHeader.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header div {
+    width: 100%;
+}
+
+header>div:first-child {
+    height: 80%;
+}
+
+header>div:last-child {
+    height: 20%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#logo {
+    height: 40vh;
+}
+
+header div p {
+    background-color: rgba(255, 255, 255, 0.686);
+    border-radius: 0px 25px 25px 0px;
+    text-align: right;
+    font-size: 3em;
+    padding: 10px 0px;
+    padding-right: 20px;
+    margin: 0px;
+    width: 40%;
+}
+
+/* nav */
+nav {
+    height: 13.3vh;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+nav a {
+    background-color: #6bad1b;
+    color: black;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4c7a13;
+    color: #8be023;
+}
+
+nav li {
+    font-size: 3em;
+}
+
+/* main */
+main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+#te {
+    justify-content: center;
+    align-items: center;
+    background-color: #a6f99a;
+}
+
+#infusion {
+    background-color: brown;
+}
+
+#accesorios {
+    background-color: crimson;
+}
+
+section div[class="contenedor"] {
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background-color: #84c67a;
+    border-radius: 50px;
+    height: 80%;
+    width: 90%;
+}
+
+.card {
+    overflow: hidden;
+    background-color: #62935b;
+    height: 40%;
+    width: 45%;
+}
+
+#contenedor-cartas {
+    height: 80%;
+    width: 90%;
+}
+
+.card:nth-child(1) {
+    border-radius: 50px 0px 0px 0px;
+    color: white;
+}
+
+.card:nth-child(2) {
+    border-radius: 0px 50px 0px 0px;
+    color: #8be023;
+}
+
+.card:nth-child(3) {
+    border-radius: 0px 0px 0px 50px;
+    color: rgb(27, 27, 192);
+}
+
+.card:nth-child(4) {
+    border-radius: 0px 0px 50px 0px;
+}
+
+.imagen-card {
+    height: 100%;
+    width: 50%;
+}
+
+.texto-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #40603b;
+    height: 100%;
+    width: 50%;
+}
+
+.texto-card h3 {
+    margin: 10px;
+}
+
+.texto-card ul {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    
+    header>div:last-child {
+        align-items: center;
+    }
+    
+    header div p {
+        text-align: center;
+        border-radius: 0px;
+        width: 100%;
+    }
+    
+}
